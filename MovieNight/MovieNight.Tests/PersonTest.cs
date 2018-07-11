@@ -16,5 +16,11 @@ namespace MovieNight.Tests
             var actual = sut.Id;
             Assert.True(expected == actual.GetType());
         }
+
+        [Fact]
+        public void Test_PersonHistory()
+        {
+            Assert.NotNull(new Person().History); //this just allows you to test if something exists. we are saying that a person SHOULD have a history
+        }
     }
 }
