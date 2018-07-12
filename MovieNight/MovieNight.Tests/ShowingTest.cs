@@ -6,7 +6,7 @@ using Xunit;
 
 namespace MovieNight.Tests
 {
-    public class ShowingTest
+    public class ShowingTests
     {
         [Fact]
         public void Test_ShowingId()
@@ -14,6 +14,7 @@ namespace MovieNight.Tests
             var expected = typeof(Guid);
             var sut = new Showing();
             var actual = sut.Id;
+
             Assert.True(expected == actual.GetType());
         }
 
@@ -26,9 +27,6 @@ namespace MovieNight.Tests
 
             Assert.True(typeof(List<Movie>) == actual.GetType());
             Assert.True(expected <= actual.Count);
-
-            
         }
-
     }
 }

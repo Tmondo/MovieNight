@@ -4,6 +4,10 @@ using System.Text;
 
 namespace MovieNight.Library.Abstracts
 {
-  public abstract APerson : AModel
-
+    public abstract class APerson : AModel
+    {
+        public APerson()
+        {
+        }
+    }
 }

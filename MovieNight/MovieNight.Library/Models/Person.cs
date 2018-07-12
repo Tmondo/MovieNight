@@ -5,10 +5,9 @@ using System.Text;
 
 namespace MovieNight.Library.Models
 {
-   public class Person : APerson
+    public class Person : APerson
     {
         public History History
-
         {
             get;
             set;

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace MovieNight.Tests
 {
-    public class PersonTest
+    public class PersonTests
     {
         [Fact]
         public void Test_PersonId()
@@ -14,13 +14,16 @@ namespace MovieNight.Tests
             var expected = typeof(Guid);
             var sut = new Person();
             var actual = sut.Id;
+
             Assert.True(expected == actual.GetType());
         }
 
         [Fact]
         public void Test_PersonHistory()
         {
-            Assert.NotNull(new Person().History); //this just allows you to test if something exists. we are saying that a person SHOULD have a history
+            var sut = new Person();
+
+            Assert.NotNull(sut.History);
         }
     }
 }

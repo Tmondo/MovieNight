@@ -4,8 +4,6 @@ using System.Text;
 
 namespace MovieNight.Library.Abstracts
 {
-
-
     public class AModel
     {
         public Guid Id

@@ -5,20 +5,20 @@ using System.Text;
 
 namespace MovieNight.Library.Models
 {
-   public class Movie : AModel
+    public class Movie : AModel
     {
-        public List<Actor> Actor
+        public List<Actor> Actors
         {
             get;
             set;
-
         }
+
         public Movie()
         {
-            Actor = new List<Actor>()
-            {
-                new Actor()
-            };
+            Actors = new List<Actor>()
+      {
+        new Actor()
+      };
         }
     }
 }

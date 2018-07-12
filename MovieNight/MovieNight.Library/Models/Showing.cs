@@ -16,9 +16,9 @@ namespace MovieNight.Library.Models
         public Showing()
         {
             Movies = new List<Movie>()
-            {
-                new Movie()
-            };
+      {
+        new Movie()
+      };
         }
     }
 }
